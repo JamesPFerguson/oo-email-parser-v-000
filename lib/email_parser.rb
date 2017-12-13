@@ -10,6 +10,7 @@ class EmailParser
     else
       list.split(" ").uniq
     end
-
+  end
+  
 
 end
