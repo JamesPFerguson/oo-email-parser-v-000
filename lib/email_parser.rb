@@ -4,7 +4,7 @@
 # or whitespace (' ').
 class EmailParser
 
-  def intialize(list)
+  def initialize(list)
     if list.include?(",")
       list.split(", ").uniq
     else
@@ -12,5 +12,4 @@ class EmailParser
     end
   end
   
-
 end
