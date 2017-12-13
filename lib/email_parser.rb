@@ -13,7 +13,7 @@ class EmailParser
 
   def parse
     if emails.include?(", ")
-      emails.split(", ").each{|e| e.split(" ")}.uniq
+      emails.split(", ").map{|e| e.split(" ")}.flatten.uniq
     else
       emails.split(" ").uniq
     end
