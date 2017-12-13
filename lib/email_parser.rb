@@ -13,9 +13,9 @@ class EmailParser
 
   def parse
     if self.emails.to_s.include?(",")
-      self.emails.split(", ").uniq
+      self.emails.to_s.split(", ").uniq
     else
-      self.emails.split(" ").uniq
+      self.emails.to_s.split(" ").uniq
     end
   end
 
