@@ -7,12 +7,16 @@ class EmailParser
   attr_accessor :emails
 
   def initialize(emails)
-    emails = emails
+    self.emails = emails
   end
 
 
   def parse
-    emails.to_s
+    if emails.include?(",")
+      emails.split(",").uniq
+    else
+      emails.split(" ").uniq
+    end
   end
 
 end
