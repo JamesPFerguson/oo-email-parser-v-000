@@ -8,6 +8,11 @@ class EmailParser
 
   def initialize(list)
 
+    self.emails = list
+
+  end
+
+
   def parse
     if self.emails.include?(",")
       self.emails.split(", ").uniq
