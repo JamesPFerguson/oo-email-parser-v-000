@@ -4,11 +4,15 @@
 # or whitespace (' ').
 class EmailParser
 
-  def parse(list)
-    if list.include?(",")
-      list.split(", ").uniq
+  attr_accessor :emails
+
+  def initialize(list)
+
+  def parse
+    if self.emails.include?(",")
+      self.emails.split(", ").uniq
     else
-      list.split(" ").uniq
+      self.emails.split(" ").uniq
     end
   end
 
