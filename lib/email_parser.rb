@@ -11,5 +11,5 @@ class EmailParser
       list.split(" ").uniq
     end
   end
-  
+
 end
