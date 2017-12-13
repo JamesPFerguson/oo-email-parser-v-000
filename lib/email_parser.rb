@@ -12,7 +12,7 @@ class EmailParser
 
 
   def parse
-    if emails.include?(",")
+    if emails.include?(", ")
       emails.split(",").uniq
     else
       emails.split(" ").uniq
